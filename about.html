@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile_task</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/desert.jpeg">
+    <style>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body {
+            background-color: rgba(232, 213, 13, 0.232);
+        }
+        .card {
+            width: 260px;
+            height: 490px;
+            background: linear-gradient(120deg, red, rgb(223, 52, 223), rgb(20, 214, 232), yellow, rgb(214, 6, 190)) orange 20%;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 30px;
+            margin-left: 580px;
+            margin-top: 70px;
+            padding: 30px;
+            color: rgb(11, 11, 11);
+        }
+        .card_name {
+            text-align: center;
+        }
+        .card_summary {
+            text-align: center;
+        }
+        .card_btm {
+            text-align: center;
+        }
+        .btn_about {
+            border-radius: 5px;
+            background-color: rgb(237, 237, 244);
+            width: 80px;
+            color: rgb(241, 241, 243);
+            padding: 4px;
+        }
+        .btn_ex {
+            border-radius: 5px;
+            background-color: rgb(237, 237, 244);
+            width: 80px;
+            color: white;
+            padding: 2px;
+        }
+        .btn_contact {
+            border-radius: 5px;
+            background-color: rgb(237, 237, 244);
+            width: 80px;
+            color: white;
+            padding: 2px;
+        }
+        .btn_about:hover {
+            color: rgb(247, 62, 6);
+        }
+        .btn_ex:hover {
+            color: rgb(247, 62, 6);
+        }
+        .btn_contact:hover {
+            color: rgb(247, 62, 6);
+        }
+        #list nav {
+            margin-left: 10px;
+            list-style-type: none;
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 768px) {
+            .resp-card {
+                margin-left: 200px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top: 30px;padding-right: 40px;">PROFILE CARD WITH NAVIGATION BUTTON</h1>
+    <div class="card resp-card">
+        <div class="card_img">
+            <img src="./assets/image/hema.png"
+                style="width: 190px; height: 190px;border-radius: 100px; margin-left: 25px;padding: 5px;" alt="hema">
+            <div class="card_name">
+                <h1>Hema</h1>
+                <h3 style="opacity: 0.8;">Python Developer</h3>
+            </div>
+        </div>
+        <div class="card_summary">
+            <h3>Summary</h3>
+            <p>Developed and maintained multiple projects using Python and its frameworks.</p>
+        </div>
+        <div class="icon">
+            <i class="fa fa-facebook-square" style="font-size:24px;;"></i>&nbsp;
+            <i class="fa fa-twitter-square" style="font-size:24px"></i>&nbsp;
+            <i class="fa fa-linkedin-square" style="font-size:24px"></i>&nbsp;
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+        </div>
+        <br>
+        <div class="main_btn">
+            <div class="card_btn">
+                <div id="list">
+                    <nav> <button class="btn_about"><a
+                                href="./about.html">About</a></button>&nbsp;
+                        <button class="btn_ex"><a
+                                href="./experience.html">Experience</a></button>&nbsp;
+                        <button class="btn_contact"><a
+                                href="./contact.html">Contact</a></button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
